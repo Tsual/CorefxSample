@@ -44,7 +44,6 @@ namespace JwtServer
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddDbContext<UserDbContext>();
-
             services.AddAuthentication(cfg =>
                 {
                     cfg.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
